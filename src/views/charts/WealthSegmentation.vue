@@ -76,7 +76,7 @@ export default {
  const myChart = new Chart(ctx, {
       type: 'doughnut',
       data: {
-        labels: ['Positions', 'Holdings', 'Currency', 'Commodity'],
+        labels: ['Opening Balance', 'Receipt', 'Withdraw', 'Commodity'],
         datasets: [{
           data: [axiosThis.summary.opening_balance ,axiosThis.summary.receipt.toFixed(2),axiosThis.summary.withdraw.toFixed(2), axiosThis.summary.JV],
           backgroundColor: [
